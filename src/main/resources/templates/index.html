@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      th:lang="${#locale.language}" lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Assetversioning Example</title>
+
+  <link rel="stylesheet" type="text/css"
+        href="/static/assetversioning-example/styles/bootstrap-4.4.1.min.css"
+        th:href="@{/assetversioning-example/styles/bootstrap-4.4.1.min.css}">
+  <link rel="stylesheet" type="text/css"
+        href="/static/assetversioning-example/styles/application.css"
+        th:href="@{/assetversioning-example/styles/application.css}">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body>
+<div class="container">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Whatever <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+   <div class="alert alert-danger text-center">
+    Alarm!
+  </div>
+</div>
+
+<script src="/static/assetversioning-example/js/jquery-3.4.1.slim.min.js"
+        th:src="@{/assetversioning-example/js/jquery-3.4.1.slim.min.js}"></script>
+<script src="/static/assetversioning-example/js/popper-1.16.0.min.js"
+        th:src="@{/assetversioning-example/js/popper-1.16.0.min.js}"></script>
+<script src="/static/assetversioning-example/js/bootstrap-4.4.1.min.js"
+        th:src="@{/assetversioning-example/js/bootstrap-4.4.1.min.js}"></script>
+<script src="/static/assetversioning-example/js/application.js"
+        th:src="@{/assetversioning-example/js/application.js}"></script>
+
+</body>
+</html>
+
